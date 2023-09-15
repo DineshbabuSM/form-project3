@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-image: url("https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        /* label{
+            width: 100px;
+            display: inline-block;
+        } */
+        form{
+           border: 1px solid black;
+           width: 500px;
+           height: 600px;
+           align-items: center;
+           margin: auto;
+           margin-top: 50px;
+           background-color: rgba(156, 155, 155, 0.5);
+           box-shadow: -5px -5px rgba(0, 0, 0, 0.2);
+           border-radius: 25px; 
+        
+        }
+        input{
+            border-radius: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <form style="text-align: center">
+        <div>
+            <h1 style="text-align: center;"> vacation trip</h1>
+            <br>
+            <label for="fname">First Name :</label>
+            <input type="text" id="name" name="fname" placeholder="First Name" required >
+        </div> <br>
+
+        <div>
+            <label for="lname">Last Name :</label>
+            <input type="text" id="name" name="lname" placeholder="Last Name" required>
+        </div> <br>
+
+        <div>
+            <label for="Gender">Gender:</label>
+            <label for="Male">Male</label>
+            <input type="radio" id="Male" name="Gender" value="Male">
+
+            <label for="Female">Female</label>
+            <input type="radio" id="Female" name="Gender" value="Female">
+
+            <label for="Others">Others</label>
+            <input type="radio" id="Others" name="Gender" value="Others">
+            <br>
+        </div> <br>
+
+        <div>
+            <label for="contact">Number :</label>
+            <input type="tel" id="contact" name="contact" placeholder="number" maxlength="10" required >
+        </div> <br>
+
+        <div>
+            <label for="Email">Emali :</label>
+            <input type="email" id="Email" name="Email" placeholder="sample@gmil.com"  required >
+        </div> <br>
+
+        <div>
+            <label for="date">prefered date:</label>
+            <input type="datetime-local" id="date" name="date"  required >
+        </div> <br>
+
+        <div>
+            <label for="place">prefered location :</label>
+            <select  id="place" name="place" placeholder="choose"> 
+                <option value="vaganam">vaganam</option>
+                <option value="coorgh">coorgh</option>
+                <option value="wayanad">wayanad</option>
+                <option value="pondy">pondy</option>
+                <option value="mysore">mysore</option>
+            </select>
+        </div><br>
+
+        <div>
+            <label for="mode">mode of transport :</label>
+            Bus <input type="checkbox" value="Bus">
+            Train <input type="checkbox" value="Train">
+            Car <input type="checkbox" value="Car">
+            Flight <input type="checkbox" value="Flight">
+        </div><br>
+
+        <div>
+            <label for="msg">any other suggestions :</label>
+            <textarea name="msg" id="msg" cols="30" rows="3"></textarea>
+        </div><br>
+        <div>
+            <input type="submit"  style="background-color: greenyellow;" >
+            <input type="reset" style="background-color: rgb(91, 157, 249); ">
+        </div>
+    </form>
+    
+   
+</body>
+</html>
